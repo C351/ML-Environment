@@ -36,7 +36,7 @@ GPU-Enabled Development Environment using Docker
 
 including ubuntu-desktop and vncserver.
 
-    nvidia-docker run -it -p 6006:6006 -p 8888:8888 -p 5901:5901 -v /host/dir:/home ml-env
+    sudo nvidia-docker run -it -p 6006:6006 -p 8888:8888 -p 5901:5901 -v /host/dir:/home ml-env
 
 and then connect to:
 
