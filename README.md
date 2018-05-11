@@ -20,11 +20,11 @@ GPU-Enabled Development Environment using Docker
 
 ## Build
 
-`git clone https://github.com/CR351/ML-Environment
+    git clone https://github.com/CR351/ML-Environment
 
-cd ML-Environment
+    cd ML-Environment
 
-sudo docker build -t ml-env .`
+    sudo docker build -t ml-env .
 
 ## Run
 
