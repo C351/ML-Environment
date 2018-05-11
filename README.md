@@ -19,16 +19,30 @@ GPU-Enabled Development Environment using Docker
 - ###### [Prerequisites](https://github.com/NVIDIA/nvidia-docker/wiki/Installation-(version-2.0)#perequisites) / [NVIDIA driver](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#how-do-i-install-the-nvidia-driver) / [Supported Version](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#which-docker-packages-are-supported) / [Docker](https://docs.docker.com/engine/installation/)
 
 ## Build
-    git clone https://github.com/CR351/ML-Environment
 
-    cd ML-Environment
+`git clone https://github.com/CR351/ML-Environment
 
-    sudo docker build -t ml-env .
+cd ML-Environment
+
+sudo docker build -t ml-env .`
+
 ## Run
 
 ######  Change path "/host/dir" to local work directory
 
-    sudo nvidia-docker run -it -p 6006:6006 -p 8888:8888 -v /host/dir:/home ml-env 
+    sudo nvidia-docker run -it -p 6006:6006 -p 8888:8888 -v /host/dir:/home ml-env
+
+## Run (Desktop)
+
+including ubuntu-desktop and vncserver.
+
+    docker run -p 5901:5901 queeno/ubuntu-desktop
+
+and then connect to:
+
+`vnc://<host>:5901` via VNC client.
+
+The VNC password is `password`.
 
 ## Once inside the container
 
